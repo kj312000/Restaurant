@@ -1,4 +1,4 @@
-import React,{useState}from "react";
+import React,{useState }from "react";
 import ReactCardFlip from "react-card-flip";
 
 const Menu = ({id, name, image, description ,price}) => {
@@ -7,6 +7,7 @@ const Menu = ({id, name, image, description ,price}) => {
     const handleClick = ()=> {
         setisFlipped(!isFlipped)
     }
+    
   return (
     <>
       
@@ -14,16 +15,19 @@ const Menu = ({id, name, image, description ,price}) => {
                     <div className="card">
                         <div className="card-body">
                             <h4 className="card-title">{name}</h4>
+                            <span style={{
+                                marginBottom:"10px"
+                            }}>click me to know more!</span>
                             <br></br>
-                            <div>                        
+                            <div style={{marginTop:"15px"}}>                        
                             <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                                 <section>
-                                    <div  className="card-media" onMouseOver={handleClick}>
+                                    <div  className="card-media" onClick={handleClick}>
                                         <img src={image} alt="images" className="card-media"></img>
                                     </div>
                                 </section>
                                 <section>
-                                    <div onMouseOutCapture={handleClick}>
+                                    <div onClick={handleClick}>
                                         <span className="card-description">
                                         {description}
                                         </span>

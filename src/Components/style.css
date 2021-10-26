@@ -7,7 +7,7 @@
   
   html {
     background: #faf7f2;
-    background-image: url(https://tse1.mm.bing.net/th?id=OIP.Ru0h6i1IhQUeIdBxHZYLcgHaEK&pid=Api&rs=1&c=1&qlt=95&w=1500&h=900);
+    background:linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-size: 14px;
